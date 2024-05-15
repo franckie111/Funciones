@@ -1,6 +1,24 @@
 <?php
-$numero_de_terminos = 20;
-$suma = ($numero_de_terminos * ($numero_de_terminos + 1)) / 2;
 
-echo "La suma de los primeros 20 números naturales es: $suma";
+function calcularAreaCuadrado($lado) {
+    return $lado * $lado;
+}
+
+function calcularAreaCirculo($radio) {
+    return pi() * $radio * $radio;
+}
+
+function calcularAreaTriangulo($base, $altura) {
+    return ($base * $altura) / 2;
+}
+
+$ladoCuadrado = 5;
+$radioCirculo = 3;
+$baseTriangulo = 4;
+$alturaTriangulo = 6;
+
+echo "El área del cuadrado con lado $ladoCuadrado es: " . calcularAreaCuadrado($ladoCuadrado) . "\n";
+echo "El área del círculo con radio $radioCirculo es: " . calcularAreaCirculo($radioCirculo) . "\n";
+echo "El área del triángulo con base $baseTriangulo y altura $alturaTriangulo es: " . calcularAreaTriangulo($baseTriangulo, $alturaTriangulo) . "\n";
+
 ?>
