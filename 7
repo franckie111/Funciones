@@ -1,0 +1,12 @@
+function enRango($inicio, $numero, $final) {
+    return $numero >= $inicio && $numero <= $final;
+}
+
+$inicio = 10;
+$numero = 15;
+$final = 20;
+if (enRango($inicio, $numero, $final)) {
+    echo "$numero cae dentro del rango de $inicio a $final.";
+} else {
+    echo "$numero no cae dentro del rango de $inicio a $final.";
+}
