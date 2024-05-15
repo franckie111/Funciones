@@ -1,0 +1,11 @@
+function sumarLista($lista) {
+    $suma = 0;
+    foreach ($lista as $numero) {
+        $suma += $numero;
+    }
+    return $suma;
+}
+
+$lista = array(8, 2, 3, 0, 7);
+
+echo "La suma de los números en la lista es: " . sumarLista($lista);
